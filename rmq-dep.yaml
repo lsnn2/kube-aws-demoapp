@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: vpromq01
   labels:
-    app: vprodb01
+    app: vpromq01
 spec:
   selector:
     matchLabels:
@@ -27,4 +27,4 @@ spec:
                   name: app-secret
                   key: rmq-pass
             - name: RABBITMQ_DEAFULT_USER
-              user: "guest"
+              value: "guest"
